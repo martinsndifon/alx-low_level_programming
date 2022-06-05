@@ -8,10 +8,11 @@
  */
 int main(void)
 {
-	for(int x='A'; x <= 'Z'; x++)
-	{
-		int lower_x = tolower(x);
-		putchar(lower_x);
-	}
+	int i;
+
+	for (i = 97; i < 123; i++)
+		putchar(i);
+
+	putchar(10);
 	return (0);
 }
