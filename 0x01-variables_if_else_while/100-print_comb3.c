@@ -3,7 +3,9 @@
 /**
  * main - entry
  *
- * return: 0
+ * descriiption: numbers manipulation
+ *
+ * Return: 0
  */
 int main(void)
 {
