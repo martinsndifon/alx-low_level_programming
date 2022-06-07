@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -6,7 +5,10 @@
  *
  * Return: 0
  */
-int main(void)
+
+int _putchar(char c);
+
+void print_alphabet(void)
 {
 	int i;
 
@@ -14,5 +16,4 @@ int main(void)
 		_putchar(i);
 
 	_putchar(10);
-	return (0);
 }
