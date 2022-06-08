@@ -3,7 +3,7 @@
 /**
  * print_last_digit - Entry point
  * @d: the integer to check
- * Return 0
+ * Return: 0
  */
 int print_last_digit(int d)
 {
