@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_square - prints #
- *
+ * print_triangle - prints a triangle
+ * @size: size of triangle
  * Return: void
  */
 
-void print_diagonal(int size)
+void print_triangle(int size)
 {
 	int a, b;
 
@@ -16,7 +16,10 @@ void print_diagonal(int size)
 	{
 		for (b = 1; b <= size; b++)
 		{
-			_putchar('#');
+			if (b <= (size - a))
+				_putchar(' ');
+			else
+				_putchar('#');
 		}
 		_putchar('\n');
 	}
