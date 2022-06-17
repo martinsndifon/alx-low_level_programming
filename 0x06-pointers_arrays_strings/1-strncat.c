@@ -1,28 +1,25 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
- * @dest: input integer.
- * @src: input integer
- * @n: the number of byte(s)
- * Return: no return.
+ *print_number - prints an integer.
+ *@n: integer to be printed.
+ *Return: void.
  */
 
-char *_strncat(char *dest, char *src, int n)
+void print_number(int n)
 {
-	int i, j;
-
-	for (i = 0; dest[i] != '\0'; i++)
+	unsigned int num;
+	num = n;
+  
+	if (n < 0)
 	{
-		continue;
+		_putchar(45);
+		num = -n;
 	}
-
-	for (j = 0; src[j] == '\0' && j < n; i++, j++)
+/* print number by recursion*/
+	if (num / 10)
 	{
-		dest[i] = src[j];
+		print_number(num / 10);
 	}
-
-	dest[i] = '\0';
-	return (dest);
+	_putchar((num % 10) + '0');
 }
