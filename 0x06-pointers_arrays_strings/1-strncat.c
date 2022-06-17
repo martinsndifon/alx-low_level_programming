@@ -1,25 +1,23 @@
 #include "main.h"
 
 /**
- *print_number - prints an integer.
- *@n: integer to be printed.
- *Return: void.
+ * _strncat - Concatenates two strings using at most
+ *            an inputted number of bytes from src.
+ * @dest: The string to be appended upon.
+ * @src: The string to be appended to dest.
+ * @n: The number of bytes from src to be appended to dest.
+ *
+ * Return: A pointer to the resulting string dest.
  */
-
-void print_number(int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	unsigned int num;
-	num = n;
-  
-	if (n < 0)
-	{
-		_putchar(45);
-		num = -n;
-	}
-/* print number by recursion*/
-	if (num / 10)
-	{
-		print_number(num / 10);
-	}
-	_putchar((num % 10) + '0');
+int index = 0, dest_len = 0;
+
+while (dest[index++])
+dest_len++;
+
+for (index = 0; src[index] && index < n; index++)
+dest[dest_len++] = src[index];
+
+return (dest);
 }
