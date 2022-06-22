@@ -12,7 +12,7 @@ int is_prime_number(int n)
 {
 	int i;
 	
-	i = is_prime_number(n, n / 2);
+	i = (n, n / 2);
 	if (i == 1)
 	{
 		return (1);
