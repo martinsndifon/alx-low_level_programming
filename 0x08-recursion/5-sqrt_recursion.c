@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * factorial - returns the factorial of a given  number
+ * _sqrt_recursion - returns the natural square root of a number
  * 
  * @n: int number to find square root
  * 
