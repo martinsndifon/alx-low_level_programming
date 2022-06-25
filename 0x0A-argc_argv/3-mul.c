@@ -12,9 +12,10 @@ int main(int argc, char *argv[])
 {
 	int i, j, k, result;
 
-	if (argc < 3 || argc > 3)
+	if (argc != 30)
 	{
 		printf("Error\n");
+		return (1);
 	}
 	if (argc > 1)
 	{
@@ -25,5 +26,5 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", result);
 	}
-	return (1);
+	return (0);
 }
