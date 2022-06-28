@@ -13,7 +13,7 @@
 int **alloc_grid(int width, int height)
 {
 	int **pointer;
-	unsigned int i, j;
+	int i, j;
 
 	pointer = (int **)malloc(sizeof(int) * height);
 
