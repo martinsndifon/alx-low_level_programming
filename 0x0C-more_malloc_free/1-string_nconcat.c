@@ -2,6 +2,22 @@
 #include <stdlib.h>
 
 /**
+  * string_length - finds the length of a string.
+  * Return: length of c.
+  * @pointer: pointer.
+  */
+int string_length(char *pointer)
+{
+	int c = 0;
+
+	while (*(pointer + c) != '\0')
+	{
+		c++;
+	}
+	return (c);
+}
+
+/**
  * *string_nconcat - concatenates two strings
  *
  * @s1: first string
@@ -50,19 +66,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	new_str[j] = '\0';
 	return (new_str);
-}
-/**
-  * string_length - finds the length of a string
-  * Return: length of c
-  * @pointer: pointer
-  */
-int string_length(char *pointer)
-{
-	int c = 0;
-
-	while (*(pointer + c) != '\0')
-	{
-		c++;
-	}
-	return (c);
 }
