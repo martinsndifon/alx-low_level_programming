@@ -9,15 +9,12 @@
 
 int main(void)
 {
-	int i;
-	{
-
-	for (i = 97; i < 123; i++)
-		putchar(i);
-	for (i = 65; i < 91; i++)
-		putchar (i);
-	}
-
-	putchar(10);
+	char ch;
+	
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+	putchar('\n');
 	return (0);
 }
