@@ -5,15 +5,14 @@
  * @d: the integer to check
  * Return: 0
  */
-int print_last_digit(int d)
+int print_last_digit(int n)
 {
-	int a;
-
-	if (d < 0)
-		d = -d;
-	a = d % 10;
-	if (a < 0)
-		a = -a;
-	_putchar(a + '0');
-	return (a);
+	int m;
+	if (n < 0)
+	{
+		n = n * -1;
+	}
+	m = n % 10;
+	_putchar(m + '0');
+	return (m);
 }
