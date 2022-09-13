@@ -1,13 +1,18 @@
 #include "main.h"
 
 /**
- * _abs - Entry point
- * @d: the integer to check
- * Return: 0
+ * _abs - returns the absolute value of an integer
+ * @n: integer to consider
+ * return: 0
  */
-int _abs(int d)
+
+int _abs(int n)
 {
-	if (d < 0)
-		return (-d);
-	return (d);
+	if (n < 0)
+	{
+		n = n * -1;
+		return n;
+	}
+	else
+		return n;
 }
