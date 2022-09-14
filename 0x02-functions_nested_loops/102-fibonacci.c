@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-	unsigned int i, j = 1, k = 2, next;
+	long int i, j = 1, k = 2, next;
 
 	for (i = 1; i <= 50; i++)
 	{
 		if (i != 50)
-			printf("%d, ", j);
+			printf("%ld, ", j);
 		else
-			printf("%d\n", j);
+			printf("%ld\n", j);
 		next = j + k;
 		j = k;
 		k = next;
