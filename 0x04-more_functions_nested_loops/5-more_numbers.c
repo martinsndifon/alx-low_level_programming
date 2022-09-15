@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - A tests function
+ * more_numbers - prints 0 - 14 using _putchar
  * Return: void
  */
 
