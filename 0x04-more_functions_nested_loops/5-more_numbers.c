@@ -1,26 +1,29 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 0 - 14 using _putchar
+ * more_numbers - A tests function
  * Return: void
  */
 
 void more_numbers(void)
 {
-	int i, j;
+	int i, j, k = 0;
 
-	for (j = 0; j < 10; j++)
+	while (k != 10)
 	{
-		for (i = 0; i <= 14; i++)
+		for (i = 0, j = 48; i <= 14; i++, j++)
 		{
 			if (i > 9)
 			{
-				_putchar(i / 10 + '0');
-				_putchar(i % 10 + '0');
-				continue;
+				_putchar(49);
 			}
-			_putchar(i + '0');
+			if (j > 57)
+			{
+				j = 48;
+			}
+			_putchar(j);
 		}
-		_putchar('\n');
+		k++;
+		_putchar(10);
 	}
 }
