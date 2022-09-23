@@ -9,3 +9,5 @@ char *cap_string(char *);
 char *leet(char *);
 int _strlen(char *);
 void print_number(int n);
+char *rot13(char *);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
