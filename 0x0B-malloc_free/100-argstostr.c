@@ -20,10 +20,10 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 			len++;
-		len = len - 2;
+		len++;
 	}
 
-	str = malloc(sizeof(char) * len);
+	str = malloc(sizeof(char) * (len - 2));
 
 	if (str == NULL)
 		return (NULL);
