@@ -10,16 +10,14 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int nb, i;
-	char *a, *b;
-
-	if ((nmemb || size) == 0)
+	unsigned int i;
+	char *str;
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-	nb = nmemb * size;
-	a = b = malloc(nb);
-	if (a == NULL)
+	str = malloc(nmemb * size);
+	if (str == NULL)
 		return (NULL);
-	for (i = 0; i < nb; i++)
-		*a++ = 0;
-	return (b);
+	for (i = 0; i < nmemb * size; i++)
+		str[i] = 0;
+	return (str);
 }
