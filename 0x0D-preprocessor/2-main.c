@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print file name it was compiled from
+ * main - print file name it was compiled from
  * Return: Always 0
  */
 
