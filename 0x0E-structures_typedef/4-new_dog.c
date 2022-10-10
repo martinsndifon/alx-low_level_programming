@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "dog.h"
 
 /**
@@ -17,6 +18,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	(*ptr).name = name;
 	(*ptr).age = age;
 	(*ptr).owner = owner;
+	if (ptr == NULL)
+		return (0);
 
 	return (ptr);
 }
