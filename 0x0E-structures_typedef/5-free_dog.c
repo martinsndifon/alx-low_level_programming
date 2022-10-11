@@ -10,5 +10,10 @@
 
 void free_dog(dog_t *d)
 {
-	free(d);
+	if (d != NULL)
+	{
+		free((*new_dog).name);
+		free((*new_dog).owner);
+		free(d);
+	}
 }
