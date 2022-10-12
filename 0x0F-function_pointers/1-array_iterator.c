@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * array_iterator - iterates through an array
- * @array: the array to iterate
+ * array_iterator - iterates through an array and
+ * passes array element to another function
+ * @array: the array to iterate through
  * @size: size of the array
  * @action: function pointer to use
  *
