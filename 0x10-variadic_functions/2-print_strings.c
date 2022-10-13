@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list ap, an;
 
-	if (n != 0)
+	if (n > 0)
 	{
 		va_start(ap, n);
 		va_start(an, n);
