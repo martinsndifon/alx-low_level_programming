@@ -1,3 +1,4 @@
+#include "lists.h"
 #include <stdio.h>
 
 /**
@@ -6,7 +7,7 @@
  * Return: void
  */
 
-void beforemain(void)__attribute__ ((constructor));
+/*void beforemain(void)__attribute__ ((constructor));*/
 
 void beforemain(void)
 {
