@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint - adds a new node at the beginning of a singly linked list
- * @head: pointer to first node of the list
+ * @head: pointer to the pointer to the second node in the list
  * @n: structure member
  *
  * Return: the address of the new element or NULL if it fails
