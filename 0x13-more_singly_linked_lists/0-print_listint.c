@@ -2,7 +2,7 @@
 
 /**
  * print_listint - prints all the elements of a singly linked list
- * @h: head pointer to the list
+ * @h: head pointer to the first node in the linked list
  *
  * Return: the number of nodes in the list
  */
