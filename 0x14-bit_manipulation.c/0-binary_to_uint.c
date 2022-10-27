@@ -1,36 +1,55 @@
 #include "main.h"
-#include <stdlib.h>
-#include <math.h>
 
 /**
- * binary_to_uint - converts a binary number to an unsigned int
- * @b: pointer to a string of 0 and 1 chars
+ * sum_exp - return sum of exponent
+ * @exp: exponent
  *
- * Return: the converted number or 0 if b is NULL or
- * there is one or more chars in the string b that is not 0 or 1
+ * Return: sum of exponent
+ */
+
+unsigned int sum_exp(unsigned int exp)
+{
+	unsigned int sm_exp = 1;
+
+	while (--exp > 0)
+	{
+		sm_exp *= 2;
+	}
+
+	return (sm_exp);
+}
+
+/**
+ * binary_to_uint - return the unsigned int representation of a binary
+ * @b: binary to be convert
+ *
+ * Return: return unaigned int representation of a binary
  */
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec = 0, i = 0, j, rem, n;
+	unsigned int num = 0, exp;
 
 	if (b == NULL)
-		return (0);
-	for (j = 0; b[j] != '\0'; j++)
+		return (num);
+
+	exp = strlen(b);
+
+	while (*b)
 	{
-		if (b[j] != '0' && b[j] != '1')
+		unsigned int sm_exp;
+
+		if (*b != '0' && *b != '1')
 			return (0);
+
+		sm_exp = sum_exp(exp);
+
+		num += (*b - '0') * sm_exp;
+
+		exp--;
+		b++;
 	}
 
-	n = atoi(b);
 
-	while (n != 0)
-	{
-		rem = n % 10;
-		n /= 10;
-		dec += rem * pow(2, i);
-		++i;
-	}
-
-	return dec;
+	return (num);
 }
