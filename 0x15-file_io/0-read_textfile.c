@@ -40,7 +40,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	close(fd);
 
-	i = printf("%s", buf);
+	i = write(STDOUT_FILENO, buf, rfd);
+	if (i < 0)
+	{
+		free(buf);
+		buf = NULL;
+		return (0);
+	}
+	free(buf);
+	buf = NULL;
 
 	return (i);
 }
