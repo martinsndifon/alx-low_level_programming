@@ -40,7 +40,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	table->key = strdup(key);
 	table->value = strdup(value);
-	table->next = ht ->array[idx];
+	table->next = ht->array[idx];
 	ht->array[idx] = table;
 
 	return (1);
