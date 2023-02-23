@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Technical interview preparation"""
 
+
 def island_perimeter(grid):
     """
     Returns the perimeter of an island described in grid
@@ -15,7 +16,7 @@ def island_perimeter(grid):
 
     1 - Represent a land
     0 - Represent water
-    
+
     """
     perimeter = 0
     rows = len(grid)
