@@ -23,8 +23,8 @@ size_t min(size_t a, size_t b)
  * appears twice in `array` (modified from `binary_search`)
  * @array: pointer to first element of array to seach
  * @value: value to search for
- * @low: starting index
- * @high: ending index
+ * @left: starting index
+ * @right: ending index
  *
  * Return: index containing `value`, or -1 if `value` not found or
  * `array` is NULL
@@ -37,10 +37,10 @@ int binary_search_exp(int *array, int value, size_t left, size_t right)
 	if (!array)
 		return (-1);
 
-	while(left <= right)
+	while (left <= right)
 	{
 		printf("Searching in array: ");
-		for (i = left; i <= right; i++ )
+		for (i = left; i <= right; i++)
 		{
 			printf("%d", array[i]);
 			if (i < right)
